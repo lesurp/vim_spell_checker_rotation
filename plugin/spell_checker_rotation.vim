@@ -1,11 +1,11 @@
-let s:rotation = 0
+let g:spell_checker_rotation = 0
 
 function! SpellCheckRotate()
-	let rotation = rotation + 1
-	if rotation >= len(g:spell_check_rotation)
-		rotation = 0
+	let spell_checker_rotation = spell_checker_rotation + 1
+	if spell_checker_rotation >= len(spell_check_spell_checker_rotation)
+		spell_checker_rotation = 0
 	endif
-	let new_language = spell_check_rotation[rotation]
+	let new_language = spell_check_rotation[spell_checker_rotation]
 	set spelllang=new_language spell
 	echo new_language
 endfunction
