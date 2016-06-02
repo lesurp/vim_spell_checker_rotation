@@ -1,5 +1,5 @@
 if !exists("g:spell_checker_rotation_counter")
-	let g:spell_checker_rotation_counter = 0
+	let g:spell_checker_rotation_counter = -1
 endif
 
 if !exists("g:spell_checker_rotation")
