@@ -12,7 +12,7 @@ function! SpellCheckRotate()
 		g:spell_checker_rotation_counter = 0
 	endif
 	let new_language = g:spell_checker_rotation[g:spell_checker_rotation_counter]
-	set g:spelllang=new_language g:spell
+	set spelllang=.new_language spell
 	echo new_language
 endfunction
 
