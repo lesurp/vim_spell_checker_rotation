@@ -7,7 +7,7 @@ This plugin allows you to simply switch between different dictionaries - useful 
 You need to map the `SpellCheckRotate` function, for example like this:
 
 ````
-nnoremap <leader>sp :call SpellCheckRotate()<cr>
+nnoremap <leader>sp :<C-U>call SpellCheckRotate(v:count)<cr>
 ````
 
 You also need to create a list of the different dictionaries you wish to use, like this:
@@ -17,6 +17,7 @@ let g:spell_checker_rotation = ['en_us', 'fr']
 ````
 
 Now pressing the shortcut ( `\sp` in my example) will rotate between the different dictionaries !
+You can now also move more than one step inside your array by giving a number before doing your shortcut. For example, if you press `2\sp`, you will not go to the next language but to the second next.
 
 ## Languages available
 
